@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block jumbotron %}
+
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a place where you get the information related to online courses. It provides the links of best sources for various courses which includes programming languages, web development, coding, data structure and algorithms. </p>
+        <p><a class="btn btn-info btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+
+        <div class="col-md-4"> 
+          <h2>Programming languages</h2>
+          <p>Learn core programming concepts and syntax for the world's most popular languages. </p>
+          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Web Development</h2>
+          <p>Learn to build professional websites and applications as used by real businesses by learning some cool web development stuff. </p>
+          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>DS and Algorithms</h2>
+          <p>Data structure and algorithms are consider as a heart for programmers to develop real-life applications and projects.</p>
+          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+
+        <div class="line">
+          <p>So what are you waiting for ? Join us and be a part of our community to share and grab the knoledge among the creative minds of the world.</p>
+          </div>
+
+        <div class="col-md-4">
+          <h1><b>Join Now !</b></h1>
+          <form method="POST" action=''> {% csrf_token %}
+          {{form.as_p}}
+          <button type="Submit" class="btn btn-success btn-sm btn-block">Submit </button>
+          </form>
+
+{% endblock %}
