@@ -1,2 +1,2 @@
 # Django-app
-A basic app made in python django framework.
+An app for important links related to various computer science courses made in python and django framework.
